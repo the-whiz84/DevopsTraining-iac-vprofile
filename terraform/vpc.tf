@@ -1,6 +1,5 @@
 module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "5.1.2"
+  source = "terraform-aws-modules/vpc/aws"
 
   name = "vprofile-eks"
 
