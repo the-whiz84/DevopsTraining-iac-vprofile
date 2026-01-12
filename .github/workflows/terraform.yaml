@@ -43,7 +43,7 @@ jobs:
       
       - name: "Terraform Init"
         id: tf_init
-        run: terraform init -input=false -backend-config="bucket=${{ env.BUCKET_TF_STATE }}"
+        run: terraform init -backend-config="bucket=${{ env.BUCKET_TF_STATE }}" --yes
 
       - name: "Terraform format check"
         id: tf_fmt
